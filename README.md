@@ -139,8 +139,8 @@ $$CAR_{i, [T, T+k]} = \left(\frac{P_{i, T+k}}{P_{i, T}} - 1\right) - \left(\frac
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/earnings-signal-engine.git
-cd earnings-signal-engine
+git clone https://github.com/Raunak-Prakash20/FinanceAI.git
+cd FinanceAI
 
 # Create and activate virtual environment
 python -m venv .venv
