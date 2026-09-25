@@ -1,23 +1,30 @@
 # Adversarial Multi-Agent Earnings Intelligence & Signal Engine
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://financeai-agentic.streamlit.app/)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Tests: 29 Passed](https://img.shields.io/badge/tests-29%20passed-success.svg)](tests/)
 
 An institutional quantitative research and point-in-time event-study engine that ingests SEC Form 10-Q/10-K filings, executes an adversarial multi-agent debate (Bull vs. Bear vs. Risk Manager vs. Technicals vs. Arbiter) with mechanical quote validation and empirical calibration, and evaluates directional signals against a FinBERT sentiment baseline.
 
+> 🚀 **Live Interactive Terminal:** [Click here to launch the live web app](https://financeai-agentic.streamlit.app/)
+
 ---
 
 ## Quickstart & Launch
 
-### 1. Interactive Research Terminal
+### 1. Live Web App (0-Install)
+Test the engine directly in your web browser:  
+👉 **[financeai-agentic.streamlit.app](https://financeai-agentic.streamlit.app/)**
+
+### 2. Local Interactive Terminal
 Launch the local Streamlit dashboard:
 ```bash
 streamlit run app.py
 ```
 *(On Windows, you can also launch directly via `Run_Dashboard.bat`)*
 
-### 2. End-to-End CLI Pipeline & Ablation
+### 3. End-to-End CLI Pipeline & Ablation
 Run the complete multi-ticker event study and ablation matrix across `NVDA`, `AAPL`, and `MSFT`:
 ```bash
 python main.py --tickers NVDA AAPL MSFT --holding-days 5 --ablation --demo
